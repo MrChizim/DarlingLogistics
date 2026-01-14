@@ -399,6 +399,7 @@
             font-weight: 700;
             color: var(--white);
             letter-spacing: 1px;
+            white-space: nowrap;
         }
 
         .navbar.scrolled .logo-text {
@@ -515,11 +516,6 @@
             background: var(--white);
             transition: var(--transition);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .menu-toggle:hover span {
-            background: var(--accent-gold);
-            box-shadow: 0 2px 8px rgba(255,140,66,0.3);
         }
 
         .navbar.scrolled .menu-toggle span {
@@ -2253,12 +2249,6 @@
                 <span class="logo-text">DARLING LOGISTICS</span>
             </a>
 
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" data-en="Home" data-no="Hjem">Home</a></li>
                 <li><a href="#services" data-en="Services" data-no="Tjenester">Services</a></li>
@@ -2274,6 +2264,11 @@
                     <i class="fas fa-globe"></i>
                 </button>
                 <a href="#contact" class="btn btn-primary nav-cta" data-en="Get Quote" data-no="Få Tilbud">Get Quote</a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>

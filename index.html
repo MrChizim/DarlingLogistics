@@ -23,6 +23,9 @@
     <meta property="og:title" content="Darling Logistics AS | Professional Logistics & Transport Services">
     <meta property="og:description" content="Your trusted logistics partner in Stavanger, Norway. Warehousing, transport, distribution, and moving services. Efficient, Rapid, Secure.">
     <meta property="og:image" content="https://www.darlinglogistics.com/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="nb_NO">
     <meta property="og:site_name" content="Darling Logistics AS">
@@ -33,6 +36,7 @@
     <meta property="twitter:title" content="Darling Logistics AS | Professional Logistics & Transport Services">
     <meta property="twitter:description" content="Your trusted logistics partner in Stavanger, Norway. Warehousing, transport, distribution, and moving services.">
     <meta property="twitter:image" content="https://www.darlinglogistics.com/logo.png">
+    <meta name="twitter:image:alt" content="Darling Logistics Logo">
 
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="NO-11">
@@ -497,19 +501,24 @@
         .mobile-toggle {
             display: none;
             flex-direction: column;
-            gap: 5px;
+            gap: 6px;
             background: none;
             border: none;
             cursor: pointer;
-            padding: 5px;
+            padding: 8px;
         }
 
         .mobile-toggle span {
-            width: 25px;
-            height: 2px;
+            width: 28px;
+            height: 3px;
             background: var(--white);
             transition: var(--transition);
             border-radius: 2px;
+        }
+
+        .mobile-toggle:hover span {
+            background: var(--accent-gold);
+            box-shadow: 0 2px 8px rgba(255,140,66,0.3);
         }
 
         .navbar.scrolled .mobile-toggle span {
@@ -541,6 +550,7 @@
             object-position: center;
             transform: scale(1.05);
             animation: heroZoom 25s ease-in-out infinite alternate;
+            loading: lazy;
         }
 
         @keyframes heroZoom {
@@ -1856,6 +1866,17 @@
 
             .about-stats {
                 grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+                padding: 16px;
+                background: transparent;
+                border-radius: 0;
+            }
+
+            .about-stat {
+                background: var(--gray-100);
+                padding: 20px 16px;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             }
 
             .testimonials-grid {
@@ -1894,6 +1915,17 @@
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 32px;
+                text-align: center;
+            }
+
+            .footer-brand,
+            .footer-col,
+            .footer-newsletter {
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
             }
 
             .footer-bottom {
@@ -1931,7 +1963,14 @@
 
             .about-stats {
                 grid-template-columns: 1fr;
-                gap: 16px;
+                gap: 12px;
+                padding: 12px;
+            }
+
+            .about-stat {
+                background: var(--gray-100);
+                padding: 16px;
+                border-radius: 12px;
             }
 
             .newsletter-form {
@@ -2563,10 +2602,10 @@
                     </ul>
 
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/darlinglogistics" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/darlinglogistics" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/darlinglogistics" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/4741207808" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 

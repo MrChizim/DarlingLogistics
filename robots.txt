@@ -1,0 +1,11 @@
+# Robots.txt for Darling Logistics AS
+# https://www.darlinglogistics.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.darlinglogistics.com/sitemap.xml
+
+# Crawl-delay (optional, be polite to search engines)
+Crawl-delay: 10
